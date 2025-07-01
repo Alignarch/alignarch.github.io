@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Alignarch</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+        body {
+            background: #eaeaea;
+            font-family: sans-serif;
+        }
+        .container {
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+        }
+        .left-triangle {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 60%;
+            height: 100%;
+            background: #fffef8;
+            clip-path: polygon(0 0, 50% 0, 0 100%);
+            z-index: 1;
+        }
+        .right-triangle {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 60%;
+            height: 100%;
+            background: #000000;
+            clip-path: polygon(100% 0, 100% 100%, 50% 100%);
+            z-index: 1;
+        }
+        .middle {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            clip-path: polygon(50% 0, 100% 100%, 0 100%);
+            background-color: #bcbcbc;
+            z-index: 2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: black;
+            font-size: 2em;
+        }
+        .logo {
+            font-size: 2.2em;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left-triangle"></div>
+        <div class="right-triangle"></div>
+        <div class="middle">
+            <div>
+                <div class="logo">Alignarch.</div>
+                <div>Align Your Architecture.</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
