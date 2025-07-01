@@ -1,0 +1,88 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2821
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 <!DOCTYPE html>\
+<html lang="en">\
+<head>\
+  <meta charset="UTF-8" />\
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />\
+  <title>Alignarch</title>\
+  <style>\
+    html, body \{\
+      margin: 0;\
+      padding: 0;\
+      height: 100%;\
+    \}\
+    body \{\
+      display: flex;\
+      justify-content: center;\
+      align-items: center;\
+      background: #ffffff;\
+    \}\
+    .background \{\
+      position: relative;\
+      width: 100vw;\
+      height: 100vh;\
+      overflow: hidden;\
+    \}\
+    .triangle-grey \{\
+      position: absolute;\
+      width: 100%;\
+      height: 100%;\
+      background: #bcbcbc; /* cement grey */\
+      clip-path: polygon(50% 0%, 100% 100%, 0% 100%);\
+      z-index: 1;\
+    \}\
+    .triangle-white \{\
+      position: absolute;\
+      width: 100%;\
+      height: 100%;\
+      background: #fffdf7; /* slightly warm white */\
+      clip-path: polygon(0% 0%, 50% 0%, 0% 100%);\
+      z-index: 0;\
+    \}\
+    .triangle-black \{\
+      position: absolute;\
+      width: 100%;\
+      height: 100%;\
+      background: #0a0a0a; /* ultra dark glossy black */\
+      clip-path: polygon(50% 0%, 100% 0%, 100% 100%);\
+      z-index: 0;\
+    \}\
+    .content \{\
+      position: absolute;\
+      top: 50%;\
+      left: 50%;\
+      transform: translate(-50%, -50%);\
+      color: #0a0a0a;\
+      font-family: Arial, sans-serif;\
+      text-align: center;\
+      z-index: 2;\
+    \}\
+    .logo \{\
+      font-size: 3rem;\
+      font-weight: bold;\
+    \}\
+    .slogan \{\
+      font-size: 1.2rem;\
+      margin-top: 0.5rem;\
+    \}\
+  </style>\
+</head>\
+<body>\
+  <div class="background">\
+    <div class="triangle-white"></div>\
+    <div class="triangle-black"></div>\
+    <div class="triangle-grey"></div>\
+    <div class="content">\
+      <div class="logo">Alignarch.</div>\
+      <div class="slogan">Align Your Architecture.</div>\
+    </div>\
+  </div>\
+</body>\
+</html>\
+}
